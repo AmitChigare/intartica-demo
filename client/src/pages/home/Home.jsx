@@ -1,4 +1,5 @@
 import AboutSection from "../../components/aboutSection/AboutSection";
+import AchievePercent from "../../components/achievePercent/AchievePercent";
 import MyCarousel from "../../components/carousel/Carousel";
 import Footer from "../../components/footer/Footer";
 import MyNavbar from "../../components/navbar/Navbar";
@@ -40,6 +41,24 @@ const Home = () => {
     },
   ];
 
+  const achievementPercentData = [
+    {
+      number: "150%",
+      heading: "Commitments",
+      desc: "150% dedication to turning your dreams into reality.",
+    },
+    {
+      number: "99%",
+      heading: "Dreamer Satisfaction",
+      desc: "That last 1% is us, who always attempt to deliver more",
+    },
+    {
+      number: "100%",
+      heading: "Commitments",
+      desc: "Check for yourselves!",
+    },
+  ];
+
   return (
     <>
       <MyNavbar />
@@ -64,6 +83,7 @@ const Home = () => {
         ))}
       </div>
       <AboutSection images={aboutImages} home={true} />
+      <AchievePercent data={achievementPercentData} type="type-1" />
       <ServiceSection images={servicesImages} />
       <RecentWorks />
       <NewletterSub />

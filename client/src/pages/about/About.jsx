@@ -8,6 +8,7 @@ import TimelineAbout from "../../components/timelineAbout/TimelineAbout";
 import Testimonials from "../../components/testimonials/Testimonials";
 import NewletterSub from "../../components/newsletterSub/NewletterSub";
 import InspirationDiv from "../../components/inspirationDiv/InspirationDiv";
+import AchievePercent from "../../components/achievePercent/AchievePercent";
 
 const About = () => {
   const essenceCardData = [
@@ -74,6 +75,21 @@ const About = () => {
     },
   ];
 
+  const achievementPercentData = [
+    {
+      number: "150+",
+      heading: "Commitments",
+    },
+    {
+      number: "99%",
+      heading: "Dreamer Satisfaction",
+    },
+    {
+      number: "100%",
+      heading: "Commitments",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -101,6 +117,7 @@ const About = () => {
           </p>
           <div>
             <button className="btn btn-danger">Free Dream Counselling</button>
+            <AchievePercent data={achievementPercentData} type="type-2" />
           </div>
         </div>
 
