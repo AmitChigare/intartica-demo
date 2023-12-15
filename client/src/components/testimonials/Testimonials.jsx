@@ -10,7 +10,7 @@ const Testimonials = () => {
       </div>
       <div className="t-info">
         <h2>What Our Customers Say About Us</h2>
-        <div className="t-cards d-flex gap-4">
+        <div className="t-cards d-flex">
           <div className="t-card-1 d-flex">
             <div className="t-icon">
               <Icon icon="bi:quote" />
@@ -24,7 +24,7 @@ const Testimonials = () => {
             </div>
             <div className="t-author d-flex gap-3">
               <div className="t-profile"></div>
-              <div className="t-name">
+              <div className="t-name d-flex flex-column justify-content-center">
                 <h6>Sophie Carter</h6>
                 <p>New York, USA</p>
               </div>
@@ -43,7 +43,7 @@ const Testimonials = () => {
             </div>
             <div className="t-author d-flex gap-3">
               <div className="t-profile"></div>
-              <div className="t-name">
+              <div className="t-name d-flex flex-column justify-content-center">
                 <h6>Sophie Carter</h6>
                 <p>New York, USA</p>
               </div>
