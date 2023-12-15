@@ -7,6 +7,7 @@ import HomeTag from "../../components/homeTag/HomeTag";
 import TimelineAbout from "../../components/timelineAbout/TimelineAbout";
 import Testimonials from "../../components/testimonials/Testimonials";
 import NewletterSub from "../../components/newsletterSub/NewletterSub";
+import InspirationDiv from "../../components/inspirationDiv/InspirationDiv";
 
 const About = () => {
   const essenceCardData = [
@@ -76,6 +77,7 @@ const About = () => {
   return (
     <>
       <Navbar />
+
       <div className="d-flex container about-container">
         <div className="about-main">
           <h1 className="about-heading">
@@ -101,6 +103,7 @@ const About = () => {
             <button className="btn btn-danger">Free Dream Counselling</button>
           </div>
         </div>
+
         <div className="d-flex flex-column gap-3">
           <img
             src="https://s3-alpha-sig.figma.com/img/a6c0/a0cc/33ccb02319127b49cd5540dcaaccd008?Expires=1703462400&Signature=WfZ0PW3vdf7SpkGv9-JxU~zqAPObZf0RzI8MSPesQTQFrQFamVl5Gkup737X1oGfx3tLbcjrX~wkGQgCu6EcZ7tVQh8AfduRQXX2i-kzSndmim~rk5LgnkzFodK5Fs9rbsK-Rlg2wWZorO6oeSbRFC46VVpVfep3VaIpLqn~Ovo5IYFEdYL4m2V8WO~B6xwKvOmLlfKeNiF8tiN29bgU~RsHf-zVOl60qzncVBmxTjDmgOX7RQgKcHr7nJ3vvq8HSE7Lf~SqPpqU1Rqdqgt5cb-BEvA4d-HRO-tb~qAlldujBRrC8UdHsyWv-bEhp~OwzZErGcYuWfoxF27ztVuVHg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
@@ -115,6 +118,7 @@ const About = () => {
           />
         </div>
       </div>
+
       <div className="container pt-5">
         <HomeTag text="Interior's Essence" />
         <div className="d-flex tt">
@@ -128,61 +132,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="d-flex container gap-5 py-4 cont-d">
-        <div>
-          <img
-            src="https://s3-alpha-sig.figma.com/img/a6c0/a0cc/33ccb02319127b49cd5540dcaaccd008?Expires=1703462400&Signature=WfZ0PW3vdf7SpkGv9-JxU~zqAPObZf0RzI8MSPesQTQFrQFamVl5Gkup737X1oGfx3tLbcjrX~wkGQgCu6EcZ7tVQh8AfduRQXX2i-kzSndmim~rk5LgnkzFodK5Fs9rbsK-Rlg2wWZorO6oeSbRFC46VVpVfep3VaIpLqn~Ovo5IYFEdYL4m2V8WO~B6xwKvOmLlfKeNiF8tiN29bgU~RsHf-zVOl60qzncVBmxTjDmgOX7RQgKcHr7nJ3vvq8HSE7Lf~SqPpqU1Rqdqgt5cb-BEvA4d-HRO-tb~qAlldujBRrC8UdHsyWv-bEhp~OwzZErGcYuWfoxF27ztVuVHg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="crashed"
-            className="crashed"
-          />
-        </div>
-        <div className="d-flex flex-column justify-content-between ">
-          <div>
-            <h1 className="interior-h">Our Inspirations</h1>
-            <p className="interior-p">
-              The name "Intartica" itself is a creative evolution, symbolizing a
-              journey from a "collection of art" to "Collection of Interior Art"
-              and culminating in the concept of the "Continent of Interiors." It
-              encapsulates our philosophy of creating a collection of art that
-              goes beyond mere aesthetics, combining form and function to design
-              interiors that are not just beautiful but also have healing
-              capabilities for the soul.
-            </p>
-          </div>
-          <div>
-            <button className="btn btn-danger px-5 py-3">Learn More</button>
-          </div>
-        </div>
-      </div>
-      <div className="d-flex container gap-5 py-4 cont-d">
-        <div>
-          <img
-            src="https://s3-alpha-sig.figma.com/img/a6c0/a0cc/33ccb02319127b49cd5540dcaaccd008?Expires=1703462400&Signature=WfZ0PW3vdf7SpkGv9-JxU~zqAPObZf0RzI8MSPesQTQFrQFamVl5Gkup737X1oGfx3tLbcjrX~wkGQgCu6EcZ7tVQh8AfduRQXX2i-kzSndmim~rk5LgnkzFodK5Fs9rbsK-Rlg2wWZorO6oeSbRFC46VVpVfep3VaIpLqn~Ovo5IYFEdYL4m2V8WO~B6xwKvOmLlfKeNiF8tiN29bgU~RsHf-zVOl60qzncVBmxTjDmgOX7RQgKcHr7nJ3vvq8HSE7Lf~SqPpqU1Rqdqgt5cb-BEvA4d-HRO-tb~qAlldujBRrC8UdHsyWv-bEhp~OwzZErGcYuWfoxF27ztVuVHg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="crashed"
-            className="crashed"
-          />
-        </div>
-        <div className="d-flex flex-column justify-content-between ">
-          <div>
-            <h1 className="interior-h">
-              A Personal Touch: Cherishing Bonds, Celebrating Family
-            </h1>
-            <p className="interior-p">
-              Founded with a deep-rooted belief in cherishing bonds and
-              celebrating family, Intartica is more than a service; it's a
-              commitment to turn your house into a home. Our founder, Srinivas
-              Reddy Puram, understands the value of hard work and dreams,
-              resonating with individuals like Sujata—a single mother and
-              investment banker who trusted us to design her dream abode. <br />{" "}
-              Our success lies in the harmonious collaboration of people and
-              technology, creating an easier, faster, and cost-effective way to
-              bring your dreams to life. This is combined with our
-              determination, passion, and integrity, underpinning every aspect
-              of who we are, what we do, and why we do it.
-            </p>
-          </div>
-        </div>
-      </div>
+      <InspirationDiv />
+      <InspirationDiv />
+
       <TimelineAbout
         type1={true}
         heading="Designing Your Dream in Three Simple Steps"
@@ -193,8 +145,10 @@ const About = () => {
         heading="Crafting Your Dream Space:The Intartica Experience in Three Simple Steps"
         timelineData={timelineData2}
       />
+
       <Testimonials />
       <NewletterSub />
+
       <Footer />
     </>
   );

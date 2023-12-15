@@ -63,7 +63,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-      <AboutSection images={aboutImages} />
+      <AboutSection images={aboutImages} home={true} />
       <ServiceSection images={servicesImages} />
       <RecentWorks />
       <NewletterSub />

@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 const Testimonials = () => {
   return (
-    <div className="container d-flex gap-4 py-5">
+    <div className="container d-flex gap-4 py-2">
       <div className="t-image">
         <img src="../../images/t-image.png" alt="" />
       </div>
