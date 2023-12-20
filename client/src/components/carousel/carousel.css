@@ -9,6 +9,14 @@
     /* position: relative; */
 }
 
+.estimator-btn{
+    position: absolute;
+    top: 45%;
+    background-color: black !important;
+    color: #fff !important;
+    right: 1rem;
+}
+
 .float-btn{
     position: absolute;
     top: 115%;

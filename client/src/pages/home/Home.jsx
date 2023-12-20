@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutSection from "../../components/aboutSection/AboutSection";
 import AchievePercent from "../../components/achievePercent/AchievePercent";
 import MyCarousel from "../../components/carousel/Carousel";
@@ -59,6 +60,15 @@ const Home = () => {
     },
   ];
 
+  useEffect(() => {
+    const text = document.getElementById("estimatorBtn");
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+    const ele = document.querySelectorAll("span");
+    for (let i = 1; i < ele.length; i++) {
+      ele[i].style.transform = `rotate(${i * 16.5}deg)`;
+    }
+  }, []);
+
   return (
     <>
       <MyNavbar />
@@ -73,6 +83,7 @@ const Home = () => {
         </p>
       </div>
       <MyCarousel images={carouselImages} main={true} />
+      <h1 id="estimatorBtn">GO - TO - ESTIMATOR -</h1>
       <div className="d-flex awards">
         <div className="why-us">Why Us?</div>
         {awards.map((award, index) => (
