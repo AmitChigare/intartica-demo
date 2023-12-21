@@ -73,15 +73,14 @@ a{
   color: rgba(255, 255, 255, 0.549);
 }
 
-#estimatorBtn {
+/* #estimatorBtn {
   height: 160px;
   font-size: 1rem;
   animation: animate 5s linear infinite;
   position: absolute;
   top: 50%;
   left: 7rem;
-  /* color: #fff; */
-}
+} */
 
 @keyframes animate {
   from {

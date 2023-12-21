@@ -60,14 +60,14 @@ const Home = () => {
     },
   ];
 
-  useEffect(() => {
-    const text = document.getElementById("estimatorBtn");
-    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-    const ele = document.querySelectorAll("span");
-    for (let i = 1; i < ele.length; i++) {
-      ele[i].style.transform = `rotate(${i * 16.5}deg)`;
-    }
-  }, []);
+  // useEffect(() => {
+  //   const text = document.getElementById("estimatorBtn");
+  //   text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+  //   const ele = document.querySelectorAll("span");
+  //   for (let i = 1; i < ele.length; i++) {
+  //     ele[i].style.transform = `rotate(${i * 16.5}deg)`;
+  //   }
+  // }, []);
 
   return (
     <>
@@ -83,7 +83,9 @@ const Home = () => {
         </p>
       </div>
       <MyCarousel images={carouselImages} main={true} />
-      <h1 id="estimatorBtn">GO - TO - ESTIMATOR -</h1>
+
+      {/* <h1 id="estimatorBtn">GO - TO - ESTIMATOR -</h1> */}
+
       <div className="d-flex awards">
         <div className="why-us">Why Us?</div>
         {awards.map((award, index) => (
@@ -93,6 +95,7 @@ const Home = () => {
           </div>
         ))}
       </div>
+
       <AboutSection images={aboutImages} home={true} />
       <AchievePercent data={achievementPercentData} type="type-1" />
       <ServiceSection images={servicesImages} />

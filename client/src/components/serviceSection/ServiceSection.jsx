@@ -3,6 +3,8 @@ import MyCarousel from "../carousel/Carousel";
 import HomeTag from "../homeTag/HomeTag";
 import "./serviceSection.css";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ServiceSection = () => {
   const carouselImages = [
@@ -29,6 +31,11 @@ const ServiceSection = () => {
     },
   ];
 
+  const hoverEffect = {
+    whileHover: { scale: 1.05 },
+    whileTap: { scale: 0.95 },
+  };
+
   return (
     <div className="container pt-5 px-3">
       <HomeTag text="Our Services" />
@@ -53,15 +60,17 @@ const ServiceSection = () => {
       </div>
       <div className="px-3 d-flex pt-5 gap-4 my-cards">
         {cardsInfo.map((cardInfo, index) => (
-          <div className="my-card" key={index}>
-            <div className="">
-              <Icon icon={cardInfo.icon} className="icon" />
-            </div>
-            <div className="">
-              <h1 className="card-heading">{cardInfo.heading}</h1>
-              <p className="card-desc">{cardInfo.desc}</p>
-            </div>
-          </div>
+          <Link to={"/"}>
+            <motion.div {...hoverEffect} className="my-card" key={index}>
+              <div className="">
+                <Icon icon={cardInfo.icon} className="icon" />
+              </div>
+              <div className="">
+                <h1 className="card-heading">{cardInfo.heading}</h1>
+                <p className="card-desc">{cardInfo.desc}</p>
+              </div>
+            </motion.div>
+          </Link>
         ))}
       </div>
     </div>

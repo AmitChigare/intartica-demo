@@ -2,43 +2,49 @@ import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const hoverEffect = {
+    whileHover: { scale: 1.2 },
+    whileTap: { scale: 0.8 },
+  };
+
   return (
     <div className="footer d-flex px-3">
       <div className="d-flex f-1">
         <div className="services-1">
           <h4>Our Services</h4>
           <ul>
-            <li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Interior design</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Outdoor design</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Lightning design</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Office design</Link>
-            </li>
+            </motion.li>
           </ul>
         </div>
         <div className="services-2">
           <h4>Our Services</h4>
           <ul>
-            <li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Reviews</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Carriers</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Lightning</Link>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li {...hoverEffect}>
               <Link to={""}>Press inquires</Link>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>

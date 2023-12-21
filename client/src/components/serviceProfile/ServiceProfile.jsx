@@ -2,13 +2,13 @@ import React from "react";
 import "./serviceProfile.css";
 import { Link } from "react-router-dom";
 
-const ServiceProfile = ({ imageUrl, number, heading, desc }) => {
+const ServiceProfile = ({ imageUrl, number, heading, desc, linkTo }) => {
   const containerStyle = {
     backgroundImage: `url(${imageUrl})`,
   };
 
   return (
-    <Link to="/">
+    <Link to={linkTo}>
       <div className="container service-bg" style={containerStyle}>
         <div className="info">
           <h1 className="service-number">{number}</h1>
