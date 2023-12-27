@@ -21,11 +21,6 @@ const MyCarousel = ({ images, main }) => {
           ))}
         </Carousel>
       </div>
-      {main && (
-        <Button className="float-btn" variant="danger">
-          Free Dream Counselling <Icon icon="ph:arrow-up-right-light" />
-        </Button>
-      )}
     </>
   );
 };

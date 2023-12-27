@@ -33,3 +33,21 @@
     font-size: 23.254px;
     font-weight: 500;
 }
+
+@media screen and (max-width: 600px){
+    .service-bg .info{
+        width: 90%;
+    }
+
+    .service-bg .info h1{
+        font-size: 56px;
+    }
+    
+    .service-bg .info h2{
+        font-size: 32px;
+    }
+    
+    .service-bg .info p{
+        font-size: 16px;
+    }
+}
