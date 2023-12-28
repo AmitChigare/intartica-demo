@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import AboutSection from "../../components/aboutSection/AboutSection";
 import AchievePercent from "../../components/achievePercent/AchievePercent";
 import MyCarousel from "../../components/carousel/Carousel";
