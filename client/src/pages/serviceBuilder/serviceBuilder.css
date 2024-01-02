@@ -43,6 +43,31 @@
     width: max-content;
 }
 
+.l-project-image-container{
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    /* width: 100vw; */
+}
+
+.my-7{
+    margin: 5rem auto !important;
+}
+
+.l-project-image-container .image {
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 30rem; /* Ensure images take the full width of the container */
+    object-fit: cover; /* Maintain aspect ratio without distorting */
+}
+
+.l-project-image-container-h {
+    color: #201F1D;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px; /* 114.583% */
+}
+
 @media screen and (max-width: 600px){
     .ssecond-container{
         flex-direction: column;
@@ -70,5 +95,13 @@
     .ssecond-container .right-container button{
         font-size: 1rem;
         padding: 0.4rem 1rem;
+    }
+
+    .l-project-image-container .image {
+        width: 20rem;
+    }
+
+    .l-project-image-container-h {
+        font-size: 1.5rem;
     }
 }
