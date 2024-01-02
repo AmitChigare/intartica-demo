@@ -5,48 +5,48 @@ import Footer from "../../components/footer/Footer";
 import NewletterSub from "../../components/newsletterSub/NewletterSub";
 // import TimelineAbout from "../../components/timelineAbout/TimelineAbout";
 // import InspirationDiv from "../../components/inspirationDiv/InspirationDiv";
-import AboutSection from "../../components/aboutSection/AboutSection";
+// import AboutSection from "../../components/aboutSection/AboutSection";
 // import FeatureSSection from "../../components/featureSSection/FeatureSSection";
 import Testimonials from "../../components/testimonials/Testimonials";
 import ServiceProfile from "../../components/serviceProfile/ServiceProfile";
 import { motion } from "framer-motion";
 
 const Services = () => {
-  const timelineData1 = [
-    {
-      icon: "material-symbols:lightbulb-circle",
-      heading: "Turning Dreams into Reality: Our Mission",
-      desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
-    },
-    {
-      icon: "material-symbols:lightbulb-circle",
-      heading: "Our Beliefs: Elevating Your Dreams",
-      desc: "At Intartica, we believe our customers are positive, visionary, and ambitious individuals united by family, community, and society. We strive to be a one-stop solution for interior design and execution, a trusted partner in turning houses into dream abodes.",
-    },
-    {
-      icon: "icon-park-solid:check-one",
-      heading: "Turning Dreams into Reality: Our Vision",
-      desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
-    },
-  ];
+  // const timelineData1 = [
+  //   {
+  //     icon: "material-symbols:lightbulb-circle",
+  //     heading: "Turning Dreams into Reality: Our Mission",
+  //     desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
+  //   },
+  //   {
+  //     icon: "material-symbols:lightbulb-circle",
+  //     heading: "Our Beliefs: Elevating Your Dreams",
+  //     desc: "At Intartica, we believe our customers are positive, visionary, and ambitious individuals united by family, community, and society. We strive to be a one-stop solution for interior design and execution, a trusted partner in turning houses into dream abodes.",
+  //   },
+  //   {
+  //     icon: "icon-park-solid:check-one",
+  //     heading: "Turning Dreams into Reality: Our Vision",
+  //     desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
+  //   },
+  // ];
 
-  const timelineData2 = [
-    {
-      icon: "material-symbols:lightbulb-circle",
-      heading: "Turning Dreams into Reality: Our Mission",
-      desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
-    },
-    {
-      icon: "material-symbols:lightbulb-circle",
-      heading: "Our Beliefs: Elevating Your Dreams",
-      desc: "At Intartica, we believe our customers are positive, visionary, and ambitious individuals united by family, community, and society. We strive to be a one-stop solution for interior design and execution, a trusted partner in turning houses into dream abodes.",
-    },
-    {
-      icon: "icon-park-solid:check-one",
-      heading: "Turning Dreams into Reality: Our Vision",
-      desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
-    },
-  ];
+  // const timelineData2 = [
+  //   {
+  //     icon: "material-symbols:lightbulb-circle",
+  //     heading: "Turning Dreams into Reality: Our Mission",
+  //     desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
+  //   },
+  //   {
+  //     icon: "material-symbols:lightbulb-circle",
+  //     heading: "Our Beliefs: Elevating Your Dreams",
+  //     desc: "At Intartica, we believe our customers are positive, visionary, and ambitious individuals united by family, community, and society. We strive to be a one-stop solution for interior design and execution, a trusted partner in turning houses into dream abodes.",
+  //   },
+  //   {
+  //     icon: "icon-park-solid:check-one",
+  //     heading: "Turning Dreams into Reality: Our Vision",
+  //     desc: "Intartica is not just an interior design and execution brand; it's a promise to turn your dream house into a real living castle. We believe in creating a positive and charismatic ambience in every home, an escape where you find solace after a hectic work schedule. Each project is approached as a masterpiece, a reflection of our dedication to enabling the positivity needed to achieve your dreams.",
+  //   },
+  // ];
 
   const aboutImages = [
     "",

@@ -5,6 +5,7 @@ import "./serviceSection.css";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ROUTE_PATHS } from "../../config";
 
 const ServiceSection = () => {
   const carouselImages = [
@@ -18,19 +19,19 @@ const ServiceSection = () => {
       icon: "ion:business-outline",
       heading: "Canvas for Architects",
       desc: "Join forces with us to craft spaces that leave a lasting impression. Benefit from our Project Management Consultancy support, showcase your work in our maintained gallery, and engage in collaborative discussions to ensure a holistic approach.",
-      linkTo: "services/service-architect",
+      linkTo: ROUTE_PATHS.SERVICE_ARCHITECT,
     },
     {
       icon: "iconamoon:profile-light",
       heading: "Haven for House Owners",
       desc: "Indulge in a world of personalised design services, efficient kitchen and wardrobe solutions, turnkey services ensuring a stress-free experience, rental house ready designs, access to premium products, house renovations that breathe new life into your space.",
-      linkTo: "services/service-owner",
+      linkTo: ROUTE_PATHS.SERVICE_OWNER,
     },
     {
       icon: "carbon:building",
       heading: "Perfection for Builders",
       desc: "For builders seeking excellence in every detail, our services offer tailored solutions such as expertly designed windows, grand entrances with secure interiors, captivating model flats, and flawless finishing works.",
-      linkTo: "services/service-builder",
+      linkTo: ROUTE_PATHS.SERVICE_BUILDER,
     },
   ];
 
