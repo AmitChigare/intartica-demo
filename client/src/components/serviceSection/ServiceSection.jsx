@@ -18,19 +18,19 @@ const ServiceSection = () => {
       icon: "ion:business-outline",
       heading: "Canvas for Architects",
       desc: "Join forces with us to craft spaces that leave a lasting impression. Benefit from our Project Management Consultancy support, showcase your work in our maintained gallery, and engage in collaborative discussions to ensure a holistic approach.",
-      linkTo: "",
+      linkTo: "services/service-architect",
     },
     {
       icon: "iconamoon:profile-light",
       heading: "Haven for House Owners",
       desc: "Indulge in a world of personalised design services, efficient kitchen and wardrobe solutions, turnkey services ensuring a stress-free experience, rental house ready designs, access to premium products, house renovations that breathe new life into your space.",
-      linkTo: "",
+      linkTo: "services/service-owner",
     },
     {
       icon: "carbon:building",
       heading: "Perfection for Builders",
       desc: "For builders seeking excellence in every detail, our services offer tailored solutions such as expertly designed windows, grand entrances with secure interiors, captivating model flats, and flawless finishing works.",
-      linkTo: "service-builder",
+      linkTo: "services/service-builder",
     },
   ];
 

@@ -14,7 +14,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/service-builder" element={<ServiceBuilder />} />
+        <Route path="/services/service-builder" element={<ServiceBuilder />} />
+        <Route path="/services/service-owner" element={<ServiceBuilder />} />
+        <Route
+          path="/services/service-architect"
+          element={<ServiceBuilder />}
+        />
       </Routes>
     </BrowserRouter>
   );

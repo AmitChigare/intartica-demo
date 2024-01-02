@@ -6,7 +6,10 @@ const Testimonials = () => {
   return (
     <div className="container d-flex gap-4 py-2">
       <div className="t-image">
-        <img src="../../images/t-image.png" alt="" />
+        <img
+          src="https://s3-alpha-sig.figma.com/img/a5c2/11f7/e99af71b78e5335eda7930c6a7530ec8?Expires=1705276800&Signature=jcom~LD7RpUl4eyGSNdDwepfa0lDhI7cm2bi6T7q~CRMXVOWlUbIq0dlmubKTM909JSYwbdTckimjeqx0o27JXlmkuw3A70KyUS7XajT9OglgloyAfsJSYUOqJS95ws-v6aZ1WoxjZCEjAZ0yXAzldObm9gqs5r58NfIQqt2ifqnECMyo0AN4mIY~oP0SxpkCjSqKLQz3fyjPuJ1WXgoG1E~9we17W-5NCH6-ImKqlbDS8sKwtoE~nHbSgNLEMGiFW0nkjm-xSvEJ~zdaZebSgkiaDt3niuj9uQBKcfYcEvYp7Kflb9iCSAuhmCKAiA1Wr8COkoMiR~LiLJBYvS6cA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt=""
+        />
       </div>
       <div className="t-info">
         <h2>What Our Customers Say About Us</h2>
