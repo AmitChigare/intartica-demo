@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const AboutSection = ({ images, home }) => {
   return (
-    <div className={`container about-section ${home && "pt-5"}`}>
+    <div className={`container my-7 about-section ${home && "pt-5"}`}>
       {home && <HomeTag text="About Us" />}
       <div className="d-flex p-3 gap-5 as-1">
         {home && (

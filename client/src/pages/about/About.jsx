@@ -9,6 +9,8 @@ import Testimonials from "../../components/testimonials/Testimonials";
 import NewletterSub from "../../components/newsletterSub/NewletterSub";
 import InspirationDiv from "../../components/inspirationDiv/InspirationDiv";
 import AchievePercent from "../../components/achievePercent/AchievePercent";
+import bedroomImg01 from "../../images/bedroom01.png";
+import bedroomImg02 from "../../images/bedroom02.png";
 
 const About = () => {
   const essenceCardData = [
@@ -122,17 +124,9 @@ const About = () => {
         </div>
 
         <div className="d-flex flex-column gap-3">
-          <img
-            src="https://s3-alpha-sig.figma.com/img/a6c0/a0cc/33ccb02319127b49cd5540dcaaccd008?Expires=1703462400&Signature=WfZ0PW3vdf7SpkGv9-JxU~zqAPObZf0RzI8MSPesQTQFrQFamVl5Gkup737X1oGfx3tLbcjrX~wkGQgCu6EcZ7tVQh8AfduRQXX2i-kzSndmim~rk5LgnkzFodK5Fs9rbsK-Rlg2wWZorO6oeSbRFC46VVpVfep3VaIpLqn~Ovo5IYFEdYL4m2V8WO~B6xwKvOmLlfKeNiF8tiN29bgU~RsHf-zVOl60qzncVBmxTjDmgOX7RQgKcHr7nJ3vvq8HSE7Lf~SqPpqU1Rqdqgt5cb-BEvA4d-HRO-tb~qAlldujBRrC8UdHsyWv-bEhp~OwzZErGcYuWfoxF27ztVuVHg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="aimg"
-            className="img-1"
-          />
+          <img src={bedroomImg01} alt="aimg" className="img-1" />
 
-          <img
-            src="https://s3-alpha-sig.figma.com/img/3c0a/26b4/a09311ff347ec85361b64ca3b027c308?Expires=1703462400&Signature=S9zqcTdJ3~hTagu7rRyxTmzBx~au7~1huEEUjzXlUpUy9miUje83qYgCAT0lNUPaJA0CESXb~YzFkKUgmJX0tetP8fcKjZWfxphGDoKAaX50TdGS-ruW5iQmaPwgqOZ6DcnzkWgv~v24whqxuySSbdXPiRtU7Oyxt2Mv2PIdAL9JYnEwQG1lWZ4qzpDraSJLDskcyJmQ8ju68NbZv2PCB77ogkTPfEwETIqjsEtB42gp-FcrSRoNXuWn6txInji4LbBuO1gBGriV-IqKN25DVGr~KOwMpMlx8L~-VlDjKq8soaHyU-cxrg3KKrl~xpJ8Ilvnhue8aBWJ1qyQmHo~Mg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="img1"
-            className="img-2"
-          />
+          <img src={bedroomImg02} alt="img1" className="img-2" />
         </div>
       </div>
 
@@ -149,7 +143,6 @@ const About = () => {
         </div>
       </div>
 
-      <InspirationDiv />
       <InspirationDiv />
 
       <TimelineAbout

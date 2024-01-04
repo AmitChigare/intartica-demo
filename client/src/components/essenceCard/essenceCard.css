@@ -12,7 +12,7 @@
 }
 
 .card-heading{
-    color: #E52B50;
+    color: #E52B50 !important;
     font-family: Avenir;
     font-size: 36px;
     font-weight: 900;

@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion;
 
 const Footer = () => {
   const hoverEffect = {
@@ -16,35 +16,35 @@ const Footer = () => {
         <div className="services-1">
           <h4>Our Services</h4>
           <ul>
-            <motion.li {...hoverEffect}>
+            <li {...hoverEffect}>
               <Link to={""}>Interior design</Link>
-            </motion.li>
-            <motion.li {...hoverEffect}>
+            </li>
+            <li {...hoverEffect}>
               <Link to={""}>Outdoor design</Link>
-            </motion.li>
-            <motion.li {...hoverEffect}>
+            </li>
+            <li {...hoverEffect}>
               <Link to={""}>Lightning design</Link>
-            </motion.li>
-            <motion.li {...hoverEffect}>
+            </li>
+            <li {...hoverEffect}>
               <Link to={""}>Office design</Link>
-            </motion.li>
+            </li>
           </ul>
         </div>
         <div className="services-2">
           <h4>Our Services</h4>
           <ul>
-            <motion.li {...hoverEffect}>
+            <li {...hoverEffect}>
               <Link to={""}>Reviews</Link>
-            </motion.li>
-            <motion.li {...hoverEffect}>
+            </li>
+            <li {...hoverEffect}>
               <Link to={""}>Carriers</Link>
-            </motion.li>
-            <motion.li {...hoverEffect}>
+            </li>
+            <li {...hoverEffect}>
               <Link to={""}>Lightning</Link>
-            </motion.li>
-            <motion.li {...hoverEffect}>
+            </li>
+            <li {...hoverEffect}>
               <Link to={""}>Press inquires</Link>
-            </motion.li>
+            </li>
           </ul>
         </div>
       </div>

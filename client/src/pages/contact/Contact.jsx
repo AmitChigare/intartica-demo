@@ -28,7 +28,7 @@ const Contact = () => {
               temporibus laudantium. Omnis.
             </p>
             <ContactForm onSubmit={handleSubmit} />
-            <div className="d-flex justify-content-between contact-icons">
+            <div className="d-flex justify-content-between contact-icons my-4">
               <div className="d-flex gap-2 align-items-center">
                 <div className="icon">
                   <Icon icon="gg:phone" />
