@@ -81,6 +81,7 @@ const Home = () => {
           discuss your vision.
         </p>
       </div>
+
       <MyCarousel images={carouselImages} main={true} />
 
       {/* <h1 id="estimatorBtn">GO - TO - ESTIMATOR -</h1> */}

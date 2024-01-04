@@ -9,7 +9,7 @@ const SHeroSection = () => {
     "https://media.designcafe.com/wp-content/uploads/2021/09/15180410/pop-ceiling-designs-for-hall.jpg",
   ];
   return (
-    <div className="s-hero-container d-flex">
+    <div className="s-hero-container d-flex mb-5">
       <div className="s-hero-content">
         <h1 className="s-hero-heading">Design Your Space For Living</h1>
         <button className="btn s-hero-btn">lorem ipsum</button>

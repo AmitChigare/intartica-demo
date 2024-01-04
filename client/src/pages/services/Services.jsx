@@ -10,6 +10,7 @@ import NewletterSub from "../../components/newsletterSub/NewletterSub";
 import Testimonials from "../../components/testimonials/Testimonials";
 import ServiceProfile from "../../components/serviceProfile/ServiceProfile";
 import { motion } from "framer-motion";
+import { ROUTE_PATHS } from "../../config";
 
 const Services = () => {
   // const timelineData1 = [
@@ -55,46 +56,25 @@ const Services = () => {
 
   const serviceList = [
     {
-      linkTo: "/",
+      linkTo: ROUTE_PATHS.SERVICE_BUILDER,
       imageUrl: "",
       number: "01",
       heading: "Builders",
       desc: "At the ultimate smart home, you're met with technology before you even step through the front door.",
     },
     {
-      linkTo: "/",
+      linkTo: ROUTE_PATHS.SERVICE_OWNER,
       imageUrl: "",
       number: "02",
       heading: "Individual House Owners",
-      desc: "Create A Calming Summer Escape With Our Luxurious Home Accessories For The Balmy Evenings.",
+      desc: "Transforming Structures into Spectacles.Showcase developments with captivating model flats and add meticulous finishing touches that redefine perfection to your interiors or finishing works.",
     },
     {
-      linkTo: "/",
+      linkTo: ROUTE_PATHS.SERVICE_ARCHITECTtst,
       imageUrl: "",
       number: "03",
-      heading: "Kitchen Cabinet",
-      desc: "Introducing the modular kitchen cabinet system. Start with our huge selection of base and wall cabinets.",
-    },
-    {
-      linkTo: "/",
-      imageUrl: "",
-      number: "04",
-      heading: "Interior Design",
-      desc: "Innovative products often feature innovative designs that play with the patterns we are familiar.",
-    },
-    {
-      linkTo: "/",
-      imageUrl: "",
-      number: "05",
-      heading: "Exterior Design",
-      desc: "These stylish and resilient products provide up-to-date options for roofing, siding, decking, and outdoor spaces.",
-    },
-    {
-      linkTo: "/",
-      imageUrl: "",
-      number: "06",
-      heading: "Custom Furniture",
-      desc: "With Quality Materials and Modern Designs, we have Designs for all Tastes. we bring you World Class Designs.",
+      heading: "For Designers/Architects",
+      desc: "Realize your dreams with our design services that reflect your lifestyle. We offer functional and aesthetically pleasing solutions for kitchens and wardrobes.ase and wall cabinets. ",
     },
   ];
 

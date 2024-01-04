@@ -20,7 +20,7 @@ const IndividualService = ({
 
       <SHeroSection />
 
-      <div className="ssecond-container container d-flex">
+      <div className="ssecond-container container d-flex my-7">
         <div className="build-img">
           <img src={briefInfo.img} alt="build-img" />
         </div>

@@ -37,8 +37,12 @@
     align-items: center;
 }
 
+.my-card:hover{
+    border: 2px solid #E52B50;
+}
+
 .card-heading{
-    color: var(--neutral-900, #2C2C2C);
+    color: var(--neutral-900, #2C2C2C) !important;
     font-family: Playfair Display;
     font-size: 2.4rem;
     line-height: 3rem; /* 133.333% */
@@ -53,7 +57,7 @@
 }
 
 .icon{
-    font-size: 1.8rem;
+    font-size: 3.8rem;
     color: #E52B50 !important;
     margin-bottom: 5rem;
 }

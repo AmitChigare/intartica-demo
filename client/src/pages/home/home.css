@@ -30,7 +30,7 @@ a{
   align-items: center;
 }
 
-.heading{
+.ht .heading{
   color: var(--neutral-900, #2C2C2C);
   text-align: center;
   font-family: Gotham;
@@ -99,7 +99,7 @@ span {
 }
 
 @media screen and (max-width: 600px){
-  .heading{
+  .ht .heading{
     font-size: 2rem;
     line-height: 2rem; 
   }

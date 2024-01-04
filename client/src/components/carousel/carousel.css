@@ -3,6 +3,16 @@
     height: 526px;
     /* position: relative; */
 }
+
+.my-carousel .rotating-element{
+    position: absolute;
+    transform: scale(0.6);
+    top: -40px;
+    left: 00px;
+    cursor: pointer;
+    z-index: 99;
+}
+
 .carousel-img-main{
     height: 90vh;
     width: 100%;
@@ -41,5 +51,11 @@
         right: 50%;
         padding: 6px!important;
         font-size: 14px;
+    }
+
+    .my-carousel .rotating-element{
+        transform: scale(0.3);
+        top: -80px;
+        left: -80px;
     }
 }

@@ -31,19 +31,19 @@ const ServiceBuilder = () => {
   const serviceFeaturesCard = [
     {
       heading: "Windows",
-      desc: "Intartica embodies speed in every project. Our streamlined processes ensure swift transformations, bringing your vision to life without unnecessary delays, making your dream interior a reality in record time.",
+      desc: "Intartica embodies speed in every project. Our streamlined processes ensure",
     },
     {
       heading: "Doors",
-      desc: "Intartica embodies speed in every project. Our streamlined processes ensure swift transformations, bringing your vision to life without unnecessary delays, making your dream interior a reality in record time.",
+      desc: "Intartica embodies speed in every project. Our streamlined processes ensure",
     },
     {
       heading: "Model Flats",
-      desc: "Intartica embodies speed in every project. Our streamlined processes ensure swift transformations, bringing your vision to life without unnecessary delays, making your dream interior a reality in record time.",
+      desc: "Intartica embodies speed in every project. Our streamlined processes ensure",
     },
     {
       heading: "Interiors",
-      desc: "Intartica embodies speed in every project. Our streamlined processes ensure swift transformations, bringing your vision to life without unnecessary delays, making your dream interior a reality in record time.",
+      desc: "Intartica embodies speed in every project. Our streamlined processes ensure",
     },
   ];
 

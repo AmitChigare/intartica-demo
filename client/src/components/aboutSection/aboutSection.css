@@ -53,6 +53,7 @@
 
 .as-2{
     gap: 3rem;
+    position: relative;
 }
 
 .about-section img{
@@ -60,6 +61,36 @@
     width: 285px;
     cursor: pointer;
 }
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.rotating-element{
+    position: absolute;
+    transform: scale(0.6);
+    top: -160px;
+    left: 170px;
+    cursor: pointer;
+}
+
+.rotating-text {
+  animation: rotate 5s linear infinite;
+  transform-origin: 50% 50%;
+  transition: 1s fill;
+  /* position: absolute; */
+  /* top: 0; */
+}
+
+.rotating-text:hover {
+  animation-play-state: paused;
+  fill: lightgray;
+  
+}
+
+
 
 @media screen and (max-width: 600px) {
     .as-1{
@@ -99,6 +130,13 @@
 
     .as-2{
         gap: 2rem;
+    }
+
+    .as-2 .rotating-element{
+        transform: scale(0.35);
+        top: -160px;
+        left: 40px;
+        cursor: pointer;
     }
 
     .about-section img{

@@ -8,7 +8,7 @@ const Sconnect = () => {
     backgroundImage: `url(${bgImageee})`,
   };
   return (
-    <div style={containerStyle} className="container sconnect-container">
+    <div style={containerStyle} className="container sconnect-container my-7">
       <div className="main">
         <h6>Subscribe To Our Email</h6>
         <h4>Start Project With Us ?</h4>

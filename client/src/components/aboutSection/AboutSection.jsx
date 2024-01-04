@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutSection.css";
 import HomeTag from "../homeTag/HomeTag";
+import { Link } from "react-router-dom";
 
 const AboutSection = ({ images, home }) => {
   return (
@@ -51,6 +52,32 @@ const AboutSection = ({ images, home }) => {
 
         <div className="d-flex as-2">
           <img src={images[0]} alt="image 1" className="image-1" />
+          <div className="rotating-element">
+            <Link to={"/"}>
+              <svg
+                width="280"
+                height="280"
+                className="rotating-text"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  id="curve"
+                  fill="transparent"
+                  d="
+      M 70, 140
+      a 70,70 0 1,1 140,0
+      a 70,70 0 1,1 -140,0
+      "
+                />
+                <text fontSize="27px" className="svg-text">
+                  <textPath xlinkHref="#curve">
+                    &#183; LET'S &#183; BUILD &#183; YOUR &#183; MASTERPIECE
+                  </textPath>
+                </text>
+              </svg>
+            </Link>
+          </div>
+
           <img src={images[1]} alt="image 2" className="" />
         </div>
       </div>
