@@ -3,38 +3,67 @@ import "./gallery.css";
 import Navbar from "../../components/navbar/Navbar";
 import NewletterSub from "../../components/newsletterSub/NewletterSub";
 import Footer from "../../components/footer/Footer";
-import aboutHome1 from "../../images/about-home-1.jpeg";
-import aboutHome2 from "../../images/about-home-2.jpeg";
-import serviceBg01 from "../../images/ServiceBg01.png";
-import serviceBg02 from "../../images/ServiceBg02.png";
-import serviceBg03 from "../../images/ServiceBg03.png";
-import HeroVideo from "../../images/heroBgVideo.mp4";
 import { Modal } from "react-bootstrap";
+import i01 from "../../images/Gallery-images/i01.jpg";
+import i02 from "../../images/Gallery-images/i02.png";
+import i03 from "../../images/Gallery-images/i03.jpg";
+import i04 from "../../images/Gallery-images/i04.jpg";
+import i05 from "../../images/Gallery-images/i05.jpg";
+import i06 from "../../images/Gallery-images/i06.jpg";
+import i07 from "../../images/Gallery-images/i07.png";
+import i08 from "../../images/Gallery-images/i08.jpg";
+import i09 from "../../images/Gallery-images/i09.jpg";
+import i10 from "../../images/Gallery-images/i10.jpg";
+import i11 from "../../images/Gallery-images/i11.png";
+import i12 from "../../images/Gallery-images/i12.jpg";
+import i13 from "../../images/Gallery-images/i13.jpg";
+import i14 from "../../images/Gallery-images/i14.jpg";
+import i15 from "../../images/Gallery-images/i15.png";
+import i16 from "../../images/Gallery-images/i16.jpg";
+import i17 from "../../images/Gallery-images/i17.jpg";
+
+import v01 from "../../images/Gallery-videos/v01.mp4";
+import v02 from "../../images/Gallery-videos/v02.mp4";
+import v03 from "../../images/Gallery-videos/v03.mp4";
+import v04 from "../../images/Gallery-videos/v04.mp4";
 
 const Gallery = () => {
   const galleryImages = [
-    aboutHome1,
-    aboutHome2,
-    serviceBg01,
-    serviceBg02,
-    serviceBg03,
+    i01,
+    i02,
+    i03,
+    i04,
+    i05,
+    i06,
+    i07,
+    i08,
+    i09,
+    i10,
+    i11,
+    i12,
+    i13,
+    i14,
+    i15,
+    i16,
+    i17,
   ];
 
-  const galleryVideos = [HeroVideo, HeroVideo, HeroVideo, HeroVideo];
+  const galleryVideos = [v01, v03, v04];
 
   const [galleryActive, setGalleryActive] = useState("image");
+  const [selectedMedia, setSelectedMedia] = useState(null);
+
   const handleGalleryClick = (galleryType) => {
     setGalleryActive(galleryType);
+    setSelectedMedia(null); // Reset selected media when switching galleries
   };
 
-  const [selectedVideo, setSelectedVideo] = useState(null);
-
-  const handleVideoClick = (video) => {
-    setSelectedVideo(video);
+  const handleMediaClick = (media) => {
+    setSelectedMedia(media);
   };
 
   const handleCloseModal = () => {
-    setSelectedVideo(null);
+    setSelectedMedia(null);
   };
 
   return (
@@ -66,7 +95,11 @@ const Gallery = () => {
           </div>
           {galleryActive === "image" &&
             galleryImages.map((image, index) => (
-              <div className="col-lg-4 col-sm-6" key={index}>
+              <div
+                className="col-lg-4 col-sm-6"
+                key={index}
+                onClick={() => handleMediaClick(image)}
+              >
                 <div className="thumbnail">
                   <div className="img-container">
                     <img src={image} alt="" className="gallery-img" />
@@ -82,7 +115,7 @@ const Gallery = () => {
               <div
                 className="col-lg-6 col-sm-6"
                 key={index}
-                onClick={() => handleVideoClick(video)}
+                onClick={() => handleMediaClick(video)}
               >
                 <div className="thumbnail">
                   <div className="img-container">
@@ -96,12 +129,16 @@ const Gallery = () => {
             ))}
         </div>
         <Modal
-          show={selectedVideo !== null}
+          show={selectedMedia !== null}
           onHide={handleCloseModal}
-          dialogClassName="gallery-modal"
+          // dialogClassName="gallery-modal"
         >
           <Modal.Body>
-            <video autoPlay loop src={selectedVideo}></video>
+            {galleryActive === "image" ? (
+              <img src={selectedMedia} alt="" className="modal-media" />
+            ) : (
+              <video autoPlay loop src={selectedMedia}></video>
+            )}
           </Modal.Body>
         </Modal>
       </div>
