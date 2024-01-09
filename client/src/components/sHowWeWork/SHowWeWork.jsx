@@ -4,6 +4,7 @@ import "./sHowWeWork.css";
 const SHowWeWork = ({ howWeWorkInfo }) => {
   return (
     <div className="container how-we-work-container my-5">
+      <div className="hwwc-overlay"></div>
       <div className="d-flex">
         <div className="d-flex flex-column hww-text">
           <h1>{howWeWorkInfo.heading}</h1>

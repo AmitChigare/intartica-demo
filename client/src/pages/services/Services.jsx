@@ -33,7 +33,7 @@ const Services = () => {
       desc: "Transforming Structures into Spectacles.Showcase developments with captivating model flats and add meticulous finishing touches that redefine perfection to your interiors or finishing works.",
     },
     {
-      linkTo: ROUTE_PATHS.SERVICE_ARCHITECTtst,
+      linkTo: ROUTE_PATHS.SERVICE_ARCHITECT,
       imageUrl: serviceBg03,
       number: "03",
       heading: "For Designers/Architects",

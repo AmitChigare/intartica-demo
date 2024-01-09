@@ -1,10 +1,21 @@
 .how-we-work-container {
     position: relative;
-    /* background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    background-image: url("../../images/luxeImage.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(209, 209, 209);
+    position: relative;
+    /* background-color: rgb(209, 209, 209); */
+  }
+
+  .hwwc-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
   }
   
   /* .overlay-container {
@@ -21,10 +32,12 @@
     font-family: Work Sans;
     padding: 2rem;
     width: 50%;
+    z-index: 2;
 }
 
 .how-we-work-container .hww-image{
     width: 50%;
+    z-index: 2;
 }
 .how-we-work-container .hww-image img{
    width: 100%;
@@ -48,6 +61,8 @@
     margin-top: -15rem;
     padding: 2rem;
     gap: 2rem;
+    z-index: 2;
+
 }
 
 .how-we-work-container .work-cards .work-card{
@@ -55,6 +70,8 @@
     height: 393px;
     background: #FFF;
     padding: 20px;
+    z-index: 2;
+
     /* margin: 20px; */
 }
 .how-we-work-container .work-cards h1{

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AboutSection from "../../components/aboutSection/AboutSection";
 import AchievePercent from "../../components/achievePercent/AchievePercent";
-import MyCarousel from "../../components/carousel/Carousel";
+// import MyCarousel from "../../components/carousel/Carousel";
 import Footer from "../../components/footer/Footer";
 import MyNavbar from "../../components/navbar/Navbar";
 import NewletterSub from "../../components/newsletterSub/NewletterSub";
@@ -207,7 +207,7 @@ const Home = () => {
           {/* <source src={HeroVideo} type="video/mp4" />
           Your browser does not support the video tag. */}
         </video>
-        <div className="">grgr</div>
+        {/* <div className="">grgr</div> */}
       </div>
 
       {/* <h1 id="estimatorBtn">GO - TO - ESTIMATOR -</h1> */}

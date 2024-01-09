@@ -65,7 +65,8 @@ const Contact = () => {
           </div>
           <div className="contact-maps">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.34203596096!2d78.2432318005133!3d17.412281015139182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1703663594473!5m2!1sen!2sin"
+              title="Intartica-contact-maps"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3805.670018529519!2d78.30854099999999!3d17.475501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI4JzMxLjgiTiA3OMKwMTgnMzAuOCJF!5e0!3m2!1sen!2sin!4v1704444844275!5m2!1sen!2sin"
               style={{ border: 0, width: "100%", height: "100%" }}
               allowfullscreen=""
               loading="lazy"
