@@ -69,7 +69,7 @@ const AboutSection = ({ images, home }) => {
       a 70,70 0 1,1 -140,0
       "
                 />
-                <text fontSize="27px" className="svg-text">
+                <text fontSize="1.5rem" className="svg-text">
                   <textPath xlinkHref="#curve">
                     &#183; LET'S &#183; BUILD &#183; YOUR &#183; MASTERPIECE
                   </textPath>

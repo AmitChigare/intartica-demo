@@ -32,6 +32,12 @@ const Navbar = () => {
         <motion.div {...hoverEffect} className="nav-btn">
           <Link to="/services">Services</Link>
         </motion.div>
+        {/* <motion.div {...hoverEffect} className="nav-btn">
+          <Link to="/services">Products</Link>
+        </motion.div>
+        <motion.div {...hoverEffect} className="nav-btn">
+          <Link to="/services">Our Work</Link>
+        </motion.div> */}
         <motion.div {...hoverEffect} className="nav-btn">
           <Link to="/gallery">Gallery</Link>
         </motion.div>

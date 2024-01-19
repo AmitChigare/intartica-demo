@@ -13,7 +13,7 @@
 
 .services-heading{
     color: #1F1F1F;
-    font-family: Gotham;
+    font-family: Inter;
     font-size: 3.2rem;
     font-weight: 700;
     line-height: normal;
@@ -41,7 +41,7 @@
 .services-para{
     color: #545454;
     font-family: Inter;
-    font-size: 22px;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: 175.483%; /* 42.116px */
@@ -87,7 +87,6 @@
 .rotating-text:hover {
   animation-play-state: paused;
   fill: lightgray;
-  
 }
 
 

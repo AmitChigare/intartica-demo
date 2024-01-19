@@ -12,6 +12,7 @@ import blueIcon from "../../images/blue-icon.png";
 import aboutHome1 from "../../images/about-home-1.jpeg";
 import aboutHome2 from "../../images/about-home-2.jpeg";
 import HeroVideo from "../../images/heroBgVideo.mp4";
+import { Link } from "react-router-dom";
 
 import { useFormik } from "formik";
 
@@ -127,7 +128,32 @@ const Home = () => {
       {/* <MyCarousel images={carouselImages} main={true} /> */}
 
       <div className="video-container">
-        <div className="bg-overlay"></div>
+        {/* <div className="bg-overlay"></div> */}
+        {/* <div className="rotating-element">
+          <Link to={"/"}>
+            <svg
+              width="280"
+              height="280"
+              className="rotating-text"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                id="curve"
+                fill="transparent"
+                d="
+      M 70, 140
+      a 70,70 0 1,1 140,0
+      a 70,70 0 1,1 -140,0
+      "
+              />
+              <text fontSize="40px" className="svg-text">
+                <textPath xlinkHref="#curve">
+                  GO &#183; TO &#183; ESTIMATOR
+                </textPath>
+              </text>
+            </svg>
+          </Link>
+        </div> */}
         <div className="contact-home">
           <h3>Designs for Every Budget</h3>
           <form

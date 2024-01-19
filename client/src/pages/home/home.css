@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .homeContainer{
   margin-top: 50px;
   display: flex;
@@ -27,6 +29,34 @@ a{
   margin: 32px 16px;
 }
 
+@keyframes rotate {
+  100% {
+      transform: rotate(1turn);
+  }
+}
+
+.video-container .rotating-element{
+  position: absolute;
+  transform: scale(0.6);
+  top: -160px;
+  left: 170px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.video-container .rotating-text {
+  animation: rotate 5s linear infinite;
+  transform-origin: 50% 50%;
+  transition: 1s fill;
+  /* position: absolute; */
+  /* top: 0; */
+}
+
+.video-container .rotating-text:hover {
+  animation-play-state: paused;
+  fill: lightgray;
+}
+
 .video-container {
   position: relative;
   width: 99vw;
@@ -40,7 +70,7 @@ a{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(44, 44, 44, 0.8);
+  background-color: rgba(44, 44, 44, 0.1);
 }
 
 .video-container .contact-home {
@@ -48,12 +78,13 @@ a{
   padding: 2rem;
   padding-bottom: 4rem;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(229, 43, 80, 0.7);
   top: 15%;
   right: 4rem;
   width: 400px;
   height: 530px;
   z-index: 9;
+  color: #fff;
 }
 .video-container .contact-home input {
   background-color: transparent;
@@ -87,8 +118,8 @@ video {
 .ht .heading{
   color: var(--neutral-900, #2C2C2C);
   text-align: center;
-  font-family: Gotham;
-  font-size: 3.5rem;
+  font-family: inter;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 96px; 
   letter-spacing: -1.125px;
@@ -99,7 +130,7 @@ video {
   color: #444 ;
   width: 75%;
   text-align: center;
-  font-family: Gotham;
+  font-family: inter;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px; 
