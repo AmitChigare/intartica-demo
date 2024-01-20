@@ -79,15 +79,15 @@ const About = () => {
 
   const achievementPercentData = [
     {
-      number: "150+",
+      number: "150",
       heading: "Commitments",
     },
     {
-      number: "99%",
+      number: "99",
       heading: "Dreamer Satisfaction",
     },
     {
-      number: "100%",
+      number: "100",
       heading: "Commitments",
     },
   ];

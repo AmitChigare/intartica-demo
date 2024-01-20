@@ -8,7 +8,6 @@
   z-index: 999;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 0 !important;
 }
 
 .home-logo{
@@ -26,6 +25,10 @@
 .nav-btn{
   /* margin: 8px 16px; */
   padding: 12px 20px;
+}
+
+.nav-active{
+  color: #E52B50;
 }
 
 .nav-btn a{

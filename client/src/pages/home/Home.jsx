@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AboutSection from "../../components/aboutSection/AboutSection";
 import AchievePercent from "../../components/achievePercent/AchievePercent";
 // import MyCarousel from "../../components/carousel/Carousel";
@@ -12,7 +12,6 @@ import blueIcon from "../../images/blue-icon.png";
 import aboutHome1 from "../../images/about-home-1.jpeg";
 import aboutHome2 from "../../images/about-home-2.jpeg";
 import HeroVideo from "../../images/heroBgVideo.mp4";
-import { Link } from "react-router-dom";
 
 import { useFormik } from "formik";
 
@@ -48,17 +47,17 @@ const Home = () => {
 
   const achievementPercentData = [
     {
-      number: "150%",
+      number: "150",
       heading: "Commitments",
       desc: "150% dedication to turning your dreams into reality.",
     },
     {
-      number: "99%",
+      number: "99",
       heading: "Dreamer Satisfaction",
       desc: "That last 1% is us, who always attempt to deliver more",
     },
     {
-      number: "100%",
+      number: "100",
       heading: "Commitments",
       desc: "Check for yourselves!",
     },
@@ -111,6 +110,24 @@ const Home = () => {
     validate,
   });
 
+  const [showForm, setShowForm] = useState(false);
+  const [formTimeout, setFormTimeout] = useState(5000);
+
+  useEffect(() => {
+    // Set a timeout to show the form after 5 seconds
+    const timeoutId = setTimeout(() => {
+      setShowForm(true);
+    }, formTimeout);
+
+    // Clear the timeout when the component unmounts
+    return () => clearTimeout(timeoutId);
+  }, [showForm]);
+
+  const handleCloseForm = () => {
+    setShowForm(false);
+    setFormTimeout(10000);
+  };
+
   return (
     <>
       <MyNavbar />
@@ -128,107 +145,86 @@ const Home = () => {
       {/* <MyCarousel images={carouselImages} main={true} /> */}
 
       <div className="video-container">
-        {/* <div className="bg-overlay"></div> */}
-        {/* <div className="rotating-element">
-          <Link to={"/"}>
-            <svg
-              width="280"
-              height="280"
-              className="rotating-text"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+        {showForm && (
+          <div className="contact-home">
+            <button className="close-button" onClick={handleCloseForm}>
+              &#10006;
+            </button>
+            <h3>Designs for Every Budget</h3>
+            <form
+              onSubmit={formik.handleSubmit}
+              className="contact-form-container"
             >
-              <path
-                id="curve"
-                fill="transparent"
-                d="
-      M 70, 140
-      a 70,70 0 1,1 140,0
-      a 70,70 0 1,1 -140,0
-      "
-              />
-              <text fontSize="40px" className="svg-text">
-                <textPath xlinkHref="#curve">
-                  GO &#183; TO &#183; ESTIMATOR
-                </textPath>
-              </text>
-            </svg>
-          </Link>
-        </div> */}
-        <div className="contact-home">
-          <h3>Designs for Every Budget</h3>
-          <form
-            onSubmit={formik.handleSubmit}
-            className="contact-form-container"
-          >
-            <div className="form-control">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.name}
-              />
-              {/* {formik.touched.name && formik.errors.name ? (
+              <div className="form-control">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.name}
+                />
+                {/* {formik.touched.name && formik.errors.name ? (
                 <div className="error">{formik.errors.name}</div>
               ) : null} */}
-            </div>
+              </div>
 
-            <div className="form-control">
-              <input
-                type="email"
-                placeholder="Email ID"
-                id="email"
-                name="email"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.email}
-              />
-              {/* {formik.touched.email && formik.errors.email ? (
+              <div className="form-control">
+                <input
+                  type="email"
+                  placeholder="Email ID"
+                  id="email"
+                  name="email"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.email}
+                />
+                {/* {formik.touched.email && formik.errors.email ? (
                 <div className="error">{formik.errors.email}</div>
               ) : null} */}
-            </div>
+              </div>
 
-            <div className="form-control">
-              <input
-                type="phone"
-                placeholder="Phone Number"
-                id="phone"
-                name="phone"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.phone}
-              />
-              {/* {formik.touched.phone && formik.errors.phone ? (
+              <div className="form-control">
+                <input
+                  type="phone"
+                  placeholder="Phone Number"
+                  id="phone"
+                  name="phone"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.phone}
+                />
+                {/* {formik.touched.phone && formik.errors.phone ? (
                 <div className="error">{formik.errors.phone}</div>
               ) : null} */}
-            </div>
+              </div>
 
-            <div className="form-control">
-              <input
-                type="text"
-                placeholder="Property Name"
-                id="property"
-                name="property"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.property}
-              />
-              {/* {formik.touched.property && formik.errors.property ? (
+              <div className="form-control">
+                <input
+                  type="text"
+                  placeholder="Property Name"
+                  id="property"
+                  name="property"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.property}
+                />
+                {/* {formik.touched.property && formik.errors.property ? (
                 <div className="error">{formik.errors.property}</div>
               ) : null} */}
-            </div>
+              </div>
 
-            <button type="submit">GET FREE QUOTE</button>
-          </form>
-          <p>
-            By submitting this form you agree to the{" "}
-            <span className="primary-color">
-              privacy policy & Terms and conditions
-            </span>
-          </p>
-        </div>
+              <button type="submit">GET FREE QUOTE</button>
+            </form>
+            <p>
+              By submitting this form you agree to the{" "}
+              <span className="" style={{ color: "black" }}>
+                privacy policy & Terms and conditions
+              </span>
+            </p>
+          </div>
+        )}
         <video autoPlay loop muted src={HeroVideo}>
           {/* <source src={HeroVideo} type="video/mp4" />
           Your browser does not support the video tag. */}

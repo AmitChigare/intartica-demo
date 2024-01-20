@@ -136,6 +136,35 @@ video {
   line-height: 32px; 
 }
 
+.contact-home{
+  position: relative;
+  animation: form-animate 1s ease-in-out;
+}
+
+@keyframes form-animate {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(50px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+}
+
+.contact-home .close-button{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
 .awards{
   display: flex !important;
   background-color: #0054A2;

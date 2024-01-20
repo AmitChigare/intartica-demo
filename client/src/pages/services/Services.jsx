@@ -19,25 +19,25 @@ const Services = () => {
 
   const serviceList = [
     {
-      linkTo: ROUTE_PATHS.SERVICE_BUILDER,
-      imageUrl: serviceBg01,
-      number: "01",
-      heading: "Builders",
-      desc: "At the ultimate smart home, you're met with technology before you even step through the front door.",
-    },
-    {
       linkTo: ROUTE_PATHS.SERVICE_OWNER,
       imageUrl: serviceBg02,
-      number: "02",
+      number: "01",
       heading: "Individual House Owners",
       desc: "Transforming Structures into Spectacles.Showcase developments with captivating model flats and add meticulous finishing touches that redefine perfection to your interiors or finishing works.",
     },
     {
       linkTo: ROUTE_PATHS.SERVICE_ARCHITECT,
       imageUrl: serviceBg03,
-      number: "03",
+      number: "02",
       heading: "For Designers/Architects",
       desc: "Realize your dreams with our design services that reflect your lifestyle. We offer functional and aesthetically pleasing solutions for kitchens and wardrobes.ase and wall cabinets. ",
+    },
+    {
+      linkTo: ROUTE_PATHS.SERVICE_BUILDER,
+      imageUrl: serviceBg01,
+      number: "03",
+      heading: "Builders",
+      desc: "At the ultimate smart home, you're met with technology before you even step through the front door.",
     },
   ];
 
