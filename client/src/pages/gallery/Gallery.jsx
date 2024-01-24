@@ -22,10 +22,10 @@ import i15 from "../../images/Gallery-images/i15.png";
 import i16 from "../../images/Gallery-images/i16.jpg";
 import i17 from "../../images/Gallery-images/i17.jpg";
 
-import v01 from "../../images/Gallery-videos/v01.mp4";
-import v02 from "../../images/Gallery-videos/v02.mp4";
-import v03 from "../../images/Gallery-videos/v03.mp4";
-import v04 from "../../images/Gallery-videos/v04.mp4";
+// import v01 from "../../images/Gallery-videos/v01.mp4";
+// import v02 from "../../images/Gallery-videos/v02.mp4";
+// import v03 from "../../images/Gallery-videos/v03.mp4";
+// import v04 from "../../images/Gallery-videos/v04.mp4";
 
 const Gallery = () => {
   const galleryImages = [
@@ -48,7 +48,7 @@ const Gallery = () => {
     i17,
   ];
 
-  const galleryVideos = [v01, v03, v04];
+  const galleryVideos = [];
 
   const [galleryActive, setGalleryActive] = useState("image");
   const [selectedMedia, setSelectedMedia] = useState(null);
